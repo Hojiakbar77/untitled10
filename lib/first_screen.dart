@@ -50,13 +50,13 @@ Widget get calendarDesign => Container(
           style: TextStyle(color: colorWhite),
         )
       ]);
+
   Widget get builtMenuDesign =>Container(
       decoration: BoxDecoration(
           color: colorGrey, borderRadius: BorderRadius.circular(12)),
       width: MediaQuery.of(context).size.width / 4,
       child: builtInfoMenu
   );
-
 
   Widget get builtMenu {
     return Padding(
@@ -76,8 +76,6 @@ Widget get calendarDesign => Container(
   Widget get chefName => const Padding(
       padding: EdgeInsets.all(8.0),
       child: Text('Азиза Каримова', style: firstNameStyle));
-
-
 
   Widget get  assessmentDetail => Row(children: const [
         Padding(
@@ -123,7 +121,6 @@ Widget get calendarDesign => Container(
         )
       ]);
 
-
   Widget get delivery => Padding(
       padding: const EdgeInsets.only(
         left: 10
@@ -137,12 +134,9 @@ Widget get calendarDesign => Container(
 
   Widget get services => Row(children: [assessment, delivery]);
 
-
-
   Widget builtFoodDetail() => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [photoFood, chefName, services ]);
-
 
   Widget builtInfoFood() => Padding(
       padding: const EdgeInsets.all(8.0),
@@ -166,7 +160,6 @@ Widget get calendarDesign => Container(
                 50,
             backgroundImage: const AssetImage('assets/images/avatar1.png'),
           )));
-
 
   Widget get builtFood => Stack(alignment: Alignment.center, children: [
         builtInfoFood(),
